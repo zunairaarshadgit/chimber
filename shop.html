@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css.css">
+  <style>
+
+    .body100 {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background-color: #343a40;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .cart-btn {
+      background: white;
+      border-radius: 30px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .cart-btn i {
+      color: #343a40;
+    }
+    .cart-btn span {
+      background: #343a40;
+      color: white;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product-card h5 {
+      margin: 10px 0 5px;
+    }
+    .product-card button {
+      width: 100%;
+    }
+    .modal-body img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .a{
+        text-decoration: none;
+        color: #f8f9fa;
+    }
+  </style>
+</head>
+<body >
+    <div class=" border-bottom p-2 fixed-top bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-lg-flex justify-content-between">
+                        <div class="d-lg-flex">
+                            <div class="me-3">
+                                <label for="">Phone: </label>
+                                <a href="#">+1 292 3293 4238</a>
+                            </div>
+                            <div class="">
+                                <label for="">Email: </label>
+                                <a href="#">zunairaarshad547@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="forgap  d-flex justify-content-end">
+                            <div class="icon me-3">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="icon me-3">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="icon me-3">
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="mt-5 pt-5 pt-lg-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2>Chimper</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="PORTFOLIO.html ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="work.html">Work</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">Action</a></li>
+                                <li><a class="dropdown-item" href="services.html">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="shop.html">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contect.html">Contect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="sign-up.html">Sign-up</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+<div class="body100">
+  <div class="header">
+    <div class="logo">THE SHOPPING SECTION</div>
+    <div class="cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row" id="product-container">
+      <!-- Products will be injected here -->
+    </div>
+  </div>
+
+  <!-- Modal Cart -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="cartModalLabel">My Cart</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="cart-items">
+          Your cart is empty.
+        </div>
+        <div class="modal-footer justify-content-between">
+          <h5>Total: $<span id="total-price">0.00</span></h5>
+          <button class="btn btn-primary"><a class="a" href="registration.html">Proceed to Buy</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <div class="container-fluid hireustemple">
+        <div class="row" >
+            <div class="col-12">
+                <div class="">
+                    <a href="">
+                        <h3 style="color: white; text-align: center; padding-top: 25px;">Hire Us & let's get started
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-flui">
+        <div class="footerbackground">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 about-us">
+                        <h5>About Us</h5>
+                        <br>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.507);">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Neque facere laudantium magnam
+                            voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 feature text-center ">
+                        <h5>Features</h5>
+                        <br>
+                        <a href="">About Us</a><br>
+                        <br>
+                        <a href="">Services</a><br>
+                        <br>
+                        <a href="">Testimonials</a><br>
+                        <br>
+                        <a href="">Contact Us</a><br>
+
+                    </div>
+                    <div class="col-md-3 col-lg-3    follow-us text-center">
+                        <h5>Follow Us</h5>
+<br>
+                        <a href="#">
+                            <i class="  footer-icon me-3 fa-brands fa-facebook-f"></i>
+                        </a>
+
+
+                        <a href="#">
+                            <i class=" footer-icon mx-3 fa-brands fa-twitter"></i>
+                        </a>
+
+
+                        <a href="#">
+                            <i class="footer-icon mx-3 fa-brands fa-instagram"></i>
+                        </a>
+
+
+                        <a href="#">
+                            <i class="footer-icon mx-3 fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-lg-3 Subscribe-Newsletter">
+                        <h5>Subscribe Newsletter</h5>
+                        <form class="d-flex">
+                            <input type="email" class="form-control transparent-input rounded-start-pill px-4"
+                                placeholder="Enter Email">
+                            <button class="btn btn-primary rounded-end-pill px-4" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br><br><br>
+            <br>
+            <center>
+                <hr style="width: 80%;">
+                <divclass="footer-bottom py-3">
+                    <div class="container text-center">
+                        <small style="color: rgba(255, 255, 255, 0.404) !important;" class="text-muted">&copy; 2025 Zui | All rights reserved. Designed with ❤️</small>
+                    </div>
+        </div>
+        </center>
+    </div>
+    </div>
+</footer>
+
+  <script>
+    const products = [
+      { id: 0, image: '4.jpg', title: 'Elegant Jacket', price: 120 },
+      { id: 1, image: '5.jpg', title: 'Stylish Hoodie', price: 60 },
+      { id: 2, image: '6.jpg', title: 'Casual Shirt', price: 45 },
+      { id: 3, image: '7.jpg', title: 'Formal Shoes', price: 150 },
+      { id: 4, image: '8.jpg', title: 'Running Shoes', price: 90 },
+      { id: 5, image: '9.jpg', title: 'Sports Watch', price: 200 },
+      { id: 6, image: '10.jpg', title: 'Backpack', price: 70 },
+      { id: 7, image: '11.webp', title: 'Denim Jeans', price: 80 },
+      { id: 8, image: '12.jpg', title: 'Sunglasses', price: 50 },
+
+    ];
+
+    let cart = [];
+
+    const productContainer = document.getElementById('product-container');
+    const cartCount = document.getElementById('cart-count');
+    const cartItems = document.getElementById('cart-items');
+    const totalPrice = document.getElementById('total-price');
+    
+    function renderProducts() {
+  products.forEach((product, index) => {
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-4';
+    col.innerHTML = `
+      <div class="product-card">
+        <img src="${product.image}" alt="${product.title}">
+        <h5>${product.title}</h5>
+        <p>$${product.price.toFixed(2)}</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-success flex-fill" onclick="addToCart(${index})">Add to Cart</button>
+          <a href="details.html?id=${product.id}" class="btn btn-outline-primary flex-fill">Details</a>
+        </div>
+      </div>
+    `;
+    productContainer.appendChild(col);
+  });
+}
+
+
+    function addToCart(index) {
+      cart.push(products[index]);
+      updateCartUI();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      cartCount.innerText = cart.length;
+      if (cart.length === 0) {
+        cartItems.innerHTML = '<p>Your cart is empty.</p>';
+        totalPrice.innerText = '0.00';
+        return;
+      }
+
+      let total = 0;
+      cartItems.innerHTML = cart.map((item, index) => {
+        total += item.price;
+        return `
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="${item.image}" alt="${item.title}">
+              <div>
+                <strong>${item.title}</strong><br/>
+                $${item.price.toFixed(2)}
+              </div>
+            </div>
+            <i class="fa-solid fa-trash text-danger" style="cursor:pointer" onclick="removeFromCart(${index})"></i>
+          </div>
+        `;
+      }).join('');
+      totalPrice.innerText = total.toFixed(2);
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
